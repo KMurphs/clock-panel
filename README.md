@@ -68,3 +68,18 @@ Using Docker:
 
 To build a production build with minification: `yarn build`
 
+
+
+## Signing 
+
+Follow instructions from
+https://grafana.com/docs/grafana/latest/developers/plugins/sign-a-plugin/
+
+Use GIT Bash on Windows to perform the commands 
+```
+
+export GRAFANA_API_KEY=eyJrIjoiNWQ4ZDQyNTU3Y2Q2YTdkNGQyYjllMjdhZWE0NjVhOWE4YWRlMDYyMiIsIm4iOiJQbHVnaW4gU2lnbmluZyBLZXkiLCJpZCI6NTczOTM0fQ==
+
+yarn sign --rootUrls http://localhost,https://localhost,http://localhost:3000,https://localhost:3000,http://172.17.6.217:8088,https://172.17.6.217:8088,http://localhost:8088,https://localhost:8088,https://172.17.6.217,http://172.17.6.217
+
+```
